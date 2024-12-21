@@ -1,0 +1,156 @@
+<!DOCTYPY html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>STAR</title>
+<style type="text/css">
+body{
+   background: -webkit-radial-gradient(center,blue,black);
+   background: radial-gradient(center,blue,bkack);
+    overflow: scroll;
+    font-family: sans-sairf;
+    color: white;
+    text-align: center;
+	}
+	.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+}
+.M{position:absolute; height:100px; animation: pulse 2s infinite;
+   border-radius: 50%; box-shadow:0 0 30px Gray; top:40%; left:10%;}
+ .tabelMeteors{position:absolute; width:80px; height:100px;
+  top:60%; right:10%;
+    box-shadow: 0 0 30px #8533ff ;}
+.tabelMeteors th,.tabelMeteors td {
+    border: 2px solid royalblue;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    color:white;
+	box-shadow:0 0 10px royalblue;}
+
+.tabelMeteors th {
+    background-color: #4ddbff;
+    color:white;
+	box-shadow:0 0 15px  #4ddbff;}
+	
+	.s{position:absolute; height:150px; 
+   border-radius: 50%; box-shadow:0 0 150px white; }
+   
+#cover{position:relative; top:90%; right:20%;  }
+#cover img{position:absolute; 
+ -webkit-transition:opacity 4s ease-in out; 
+transition:opacity 4s ease-in-out;
+border-radius: 50%;}
+#cover img.top:hover{opacity:0;
+border-radius: 50%;}
+
+.starTable {position:absolute; width:50px; height:50px;
+  top:200%; left:40%;
+    box-shadow: 0 0 30px #8533ff ;}
+
+	
+.starTable th,.starTable td {
+    border: 2px solid royalblue;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    color:white;
+	box-shadow:0 0 10px royalblue; }
+
+.starTable th {
+    background-color: #4ddbff;
+    color:white;
+	box-shadow:0 0 15px  #4ddbff;}
+	
+	#cover1{position:relative;  top:250%; right:10%;}
+#cover1 img{position:absolute; border-radius: 50%; -webkit-transition:opacity 4s ease-in out; transition:opacity 4s ease-in-out;}
+#cover1 img.top:hover{opacity:0; border-radius: 50%;}
+.eclipse{position:absolute; height:150px;  border-radius: 50%; box-shadow:0 0 80px blue; top:350%; right:40%;}
+.SEE {
+    position: absolute;
+    top: 400%;
+    right:30%;
+    transform: translateX(-50%);
+    padding: 40px 40px; 
+    text-shadow:4px -4px 4px black;
+	font-size:50px;
+	font-family:sans-sairf;
+		font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+<h1>**Stars *&* Meteors**</h1>
+<div><img src="Meteors.jpg" class="M" alt="MeteorsImg" >
+<table class="tabelMeteors">
+<caption>Meteors</caption>
+<thead>
+ <tr>
+<th colspan="5">Colors</th>
+<th colspan="4">Viewing Times</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+ <td>yellow</td><td> green</td><td> White</td><td> Blue</td><td> Orange</td>
+<td>Perseids: August</td><td> Geminids: December</td><td> Quadrantids: January</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="cover" class="img"> 
+<img   class="bottom" src="stars2.jpg" alt="ImgStar2">
+<img class="top" src="Star1.jpg" alt="ImgStar1">
+</div>
+
+
+<div><table class="starTable">
+<caption>Stars</caption>
+<thead>
+ <tr>
+<th colspan="5">Colors</th>
+<th colspan="4">Known Names</th>
+<th>Visibility</th>
+<th>Ages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+ <td>Red</td><td> Yellow</td><td> White</td><td> Blue</td><td> Orange</td>
+<td>Sirius(Al-Shara)</td><td> Altair</td><td> Vega</td><td>Suhail</td>
+<td>Visible throughout the year</td>
+<td>Millions to billions of years</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="cover1" class="img">
+<img  class="bottom" src="sheel.jpg" alt="ImgAlShiraa">
+<img class="top" src="AlShiraa.jpg" alt="ImgAlShiraa">
+</div>
+
+<div><img src="eclipse.jpg"  class="eclipse" alt="eclipseImg" ></div>
+<div class="SEE">
+       <a  href="page3Galaxy.html" >**SEE**</a>
+    </div>
+	<script type="text/javascript">
+function createStar() {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = `${Math.random() * document.body.scrollHeight}px`;
+    star.style.left = `${Math.random() * window.innerWidth}px`;
+    document.body.appendChild(star);
+}
+
+for (let i = 0; i < 200; i++) {
+    createStar();
+}
+</script>
+</body>
+</html>

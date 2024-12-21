@@ -1,0 +1,46 @@
+<!DOCTYPY html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>***</title>
+<style type="text/css">
+body{
+   background: -webkit-radial-gradient(center,blue,black);
+   background: radial-gradient(center,blue,bkack);
+    font-family: sans-sairf;
+    color: white;
+    text-align: center;}
+p{font-size:60; font-family:Algerian;  text-align:center; color:white;  text-shadow:4px -2px 8px royalblue;
+  }
+	.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+}
+
+</style>
+</head>
+
+<body>
+<p>***</p><br>
+<p>*Learn more about the deep galaxy*</p><br>
+<p>*thanks for your visit^^<p/><br>
+<a href="The Deep Galaxy.html"><p>SE.Sondos So</p>
+<script type="text/javascript">
+function createStar() {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = `${Math.random() * document.body.scrollHeight}px`;
+    star.style.left = `${Math.random() * window.innerWidth}px`;
+    document.body.appendChild(star);
+}
+
+for (let i = 0; i < 200; i++) {
+    createStar();
+}
+</script>
+</body>
+</html>

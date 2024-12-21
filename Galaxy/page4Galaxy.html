@@ -1,0 +1,130 @@
+<!DOCTYPT html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Book</title>
+<style type="text/css">
+body{
+   background: -webkit-radial-gradient(center,blue,black);
+   background: radial-gradient(center,blue,bkack);
+    overflow: scroll;
+    font-family: sans-sairf;
+    color: white;
+    text-align: center;}
+.p1{font-size:40; font-family:Algerian;  text-align:center; color:white;  text-shadow:4px -2px 8px royalblue;
+  }
+.p{font-size:20; font-family:sans-sairf; text-align:center;color:white;}
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+}
+ table {
+        margin: 50px auto;
+        width: 50%;
+        box-shadow: 0 0 15px rgba(0, 5, 10, 0.2);
+    }
+	 th, td { 
+	
+        padding: 10px;
+        border: 1px solid royalblue;
+    }
+    th {  
+        background-color: blue ;
+        color:white;
+        text-shadow: 1px 1px 2px white;
+    }
+    td { text-align:center;
+        background-color: #34495e;
+      
+    }
+	
+
+</style>
+</head>
+
+<body>
+<div><p class="p1">*Astronomical observation night*</p>
+<p class="p">*Translation and Additional Observing Locations*<br><br>
+Astronomical observation sites are among the best places for space and astronomy enthusiasts to enjoy the beauty of the universe and learn the secrets of the sky.
+These sites provide an ideal environment for observing stars, planets, and other celestial bodies.
+They are typically located far from city light pollution, allowing for clearer and more detailed views of the night sky. 
+In addition to Zarqa University, there are many other remarkable observation sites in Jordan, offering a unique experience for space lovers and enabling them to follow astronomical events such as eclipses, meteor showers, and more.
+ Some notable sites include:<br>
+<br>
+*Wadi Rum: Known for its dark skies and stunning desert landscape, it is a popular location for stargazing and observing meteor showers.<br>
+*Dana Biosphere Reserve: Offers clear skies and minimal light pollution, making it an excellent spot for astronomy activities.<br>
+*Al-Azraq Desert: Provides an open and dark environment perfect for observing celestial phenomena.<br>
+*Petra: Although primarily known for its archaeological significance, Petra also offers dark skies suitable for stargazing activities.</p>
+</div width="50" height="50"><hr>
+<table>
+    <form method="post">
+        <tr>
+            <th colspan="2">Booking Information</th>
+        </tr>
+        <tr>
+            <td>Full Name</td>
+            <td><input type="text" name="full_name" required></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" required placeholder="Name@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td><input type="tel" name="phone" required></td>
+        </tr>
+        <tr>
+            <td>Booking Date</td>
+            <td><input type="date" name="booking_date"></td>
+        </tr>
+        <tr>
+            <td>Observation Location</td>
+            <td>
+                <select name="location" required>
+                    <option value="Zarqa University">Zarqa University</option>
+                    <option value="Wadi Rum">Wadi Rum</option>
+                    <option value="Dana Biosphere Reserve">Dana Biosphere Reserve</option>
+                    <option value="Al-Azraq Desert">Al-Azraq Desert</option>
+                    <option value="Petra">Petra</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Payment Method</td>
+            <td>
+                <select name="PaymentMethod" required>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                    <option value="Pay on Arrival">Pay on Arrival</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </form>
+</table>
+
+<script type="text/javascript">
+function createStar() {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = `${Math.random() * document.body.scrollHeight}px`;
+    star.style.left = `${Math.random() * window.innerWidth}px`;
+    document.body.appendChild(star);
+}
+
+for (let i = 0; i < 200; i++) {
+    createStar();
+}
+</script>
+<a href="page5Galaxy.html"><p class="p1">**Enjoy a night full of meteors**</p></a>
+</body>
+</html>
